@@ -10,17 +10,17 @@ Employee Tracker is a web application built using Django and Python that helps y
 --Reports: Generate reports on employee statistics and export them in various formats.
 **User-friendly Interface:
 
-#Usage
+# Usage
 
 --Log in to the admin panel using your superuser account.
 --Add employees, departments, and other relevant information through the admin panel.
 --Use the employee tracking features through the user-friendly interface.
 
-#Conclusion
+# Conclusion
 
 The Employee Tracker project is a powerful and user-friendly web application built with Django and Python, designed to simplify the management and tracking of employee information within your organization. Throughout its development, we aimed to create a robust and efficient tool to enhance the way you handle employee data.
 
-#Key highlights of this project include:
+# Key highlights of this project include:
 
 --Employee Management: Effortlessly add, edit, and remove employee records, making it easy to keep your employee database up to date.
 

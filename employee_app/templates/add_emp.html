@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #3498db; /* Background color for the entire page */
+            font-family: Arial, sans-serif;
+            color: #fff; /* Text color for the entire page */
+        }
+
+        .btn-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Background color for the form container */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        form input[type="text"],
+        form input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7; /* Background color for input fields */
+            color: #333; /* Text color for input fields */
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Background color for the button */
+            color: #fff; /* Text color for the button */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-container">
+        <center><h1>ADD AN EMPLOYEE</h1></center>
+        <hr>
+        <form action="/add_emp" method="post">
+            {% csrf_token %}
+            <label for="first_name">First Name</label><br>
+            <input type="text" id="first_name" name="first_name" value="{{ first_name }}"><br>
+            
+            <label for="last_name">Last Name</label><br>
+            <input type="text" id="last_name" name="last_name" value="{{ last_name }}"><br>
+            
+            <label for="salary">Salary</label><br>
+            <input type="number" id="salary" name="salary" value="{{ salary }}"><br>
+            
+            <label for="dept">Department</label><br>
+            <input type="number" id="dept" name="dept" value="{{ dept }}"><br>
+            
+            <label for="role">Role</label><br>
+            <input type="number" id="role" name="role" value="{{ role }}"><br>
+            
+            <label for="bonus">Bonus</label><br>
+            <input type="number" id="bonus" name="bonus" value="{{ bonus }}"><br>
+            
+            <label for="phone">Phone Number</label><br>
+            <input type="number" id="phone" name="phone" value="{{ phone }}"><br>
+            
+            <hr>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>          
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
